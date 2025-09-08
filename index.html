@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang = "en" class = "scroll-smooth">
+
+<head>
+  <meta charset = "UTF-8" />
+  <meta name    = "viewport" content = "width=device-width, initial-scale=1.0" />
+  <title>Soundar Rajan Portfolio</title>
+  <link   rel  = "stylesheet"
+          href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" />
+  <script src  = "https://cdn.tailwindcss.com"></script>
+  <script src  = "js/t-config.js"></script>
+  <link   rel  = "stylesheet" href = "/css/style.css">
+</head>
+
+<body class = "bg-primary-dark text-text-light font-sans">
+<div  id    = "notification-container"
+      class = "fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300 transform -translate-y-full">
+<div  id    = "notification-message" class = "mx-auto max-w-lg text-center rounded-lg py-3 px-6 shadow-lg"></div>
+  </div>
+  <nav id    = "main-nav"
+       class = "fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-secondary-dark bg-opacity-40 backdrop-blur-lg border-2 border-dark-gray">
+  <div class = "container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
+  <a   href  = "#hero" class = "text-3xl font-bold font-heading text-text-light">Soundar <span
+       class = "text-accent-orange font-bold">G</span></a>
+  <ul  class = "hidden md:flex space-x-8 text-text-muted font-semibold">
+        <li>
+          <a href = "#experience" class = "hover:text-text-light transition duration-300">EXPERIENCE</a>
+        </li>
+        <li>
+          <a href = "#about" class = "hover:text-text-light transition duration-300">ABOUT</a>
+        </li>
+        <li>
+          <a href = "#skills" class = "hover:text-text-light transition duration-300">SKILLS</a>
+        </li>
+        <li>
+          <a href = "#education" class = "hover:text-text-light transition duration-300">EDUCATION</a>
+        </li>
+        <li>
+          <a href = "#contact" class = "hover:text-text-light transition duration-300">CONTACT</a>
+        </li>
+      </ul>
+      <a href  = "#contact"
+         class = "hidden md:block border border-accent-orange text-accent-orange py-2 px-6 rounded-full font-semibold hover:bg-accent-orange hover:text-white transition duration-300 shadow-lg glare-effect">Contact
+        Now</a>
+      <button id = "mobile-menu-btn" class = "md:hidden focus:outline-none">
+        <!-- Default hamburger -->
+        <svg  xmlns  = "http://www.w3.org/2000/svg" class = "w-7 h-7 text-text-light" fill = "none" viewBox = "0 0 24 24"
+              stroke = "currentColor" stroke-width        = "2">
+        <line x1     = "4" y1                             = "6" x2                         = "20" y2        = "6" />
+        <line x1     = "4" y1                             = "12" x2                        = "20" y2        = "12" />
+        <line x1     = "4" y1                             = "18" x2                        = "20" y2        = "18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <button id           = "mobile-menu-btn" class            = "md:hidden focus:outline-none">
+  <svg    xmlns        = "http://www.w3.org/2000/svg" class = "w-7 h-7" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor"
+          stroke-width = "2">
+  <line   x1           = "4" y1                             = "6" x2         = "20" y2        = "6" />
+  <line   x1           = "4" y1                             = "12" x2        = "20" y2        = "12" />
+  <line   x1           = "4" y1                             = "18" x2        = "20" y2        = "18" />
+    </svg>
+  </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div   id    = "mobile-menu"
+         class = "fixed inset-x-0 top-[64px] z-40 md:hidden hidden bg-primary-dark bg-secondary-dark bg-opacity-40 backdrop-blur-lg border-2 border-dark-gray">
+  <ul    class = "flex flex-col items-center py-20 space-y-5">
+  <li><a href  = "#experience" class = "font-semibold mobile-nav-link">EXPERIENCE</a></li>
+  <li><a href  = "#about" class      = " font-semibold mobile-nav-link">ABOUT</a></li>
+  <li><a href  = "#skills" class     = "font-semibold mobile-nav-link">SKILLS</a></li>
+  <li><a href  = "#education" class  = "font-semibold mobile-nav-link">EDUCATION</a></li>
+  <li><a href  = "#contact" class    = "font-semibold mobile-nav-link">CONTACT</a></li>
+    </ul>
+  </div>
+  <main>
+    <section id    = "hero" class         = "relative min-h-screen bg-primary-dark flex items-center p-4 overflow-hidden">
+    <div     class = "absolute inset-0 z-0">
+    <img     src   = "images\bg1.jpg" alt = "Profile Background" class = "w-full h-full object-cover opacity-30 blur-xl" />
+      </div>
+      <div class = "relative z-10 max-w-7xl mx-auto p-8 flex flex-col items-center md:flex-row-reverse md:space-x-16">
+      <div class = "md:w-1/2 mb-8 md:mb-0 flex-shrink-0">
+      <img src   = "/images/profile 6.jpg" alt = "Soundar Rajan"
+           class = "w-[900px] h-[500px] object-cover rounded-xl shadow-lg border-2 border-dark-gray" />
+        </div>
+        <div class = "md:w-1/2 text-center md:text-left">
+        <p   class = "text-lg font-semibold text-text-muted mb-2 uppercase tracking-widest font-heading"></p>
+        <h1  class = "text-6xl sm:text-5xl font-bold font-heading leading-tight mb-4 text-text-light">
+            Soundar Rajan
+          </h1>
+          <p class = "text-base md:text-lg text-text-muted leading-relaxed mb-8">
+            A passionate biomedical engineer with a drive for innovation in
+            medical technology, device development, and healthcare. I'm
+            dedicated to applying my technical expertise to create impactful
+            solutions that improve patient outcomes.
+          </p>
+          <div
+               class = "flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href  = "#contact"
+               class = "btn-ghost-dark text-white py-2 px-6 rounded-full font-semibold flex items-center justify-center space-x-2 w-full sm:w-auto glare-effect border-2 border-dark-gray">
+              <span>Let's Connect</span>
+              <svg  xmlns  = "http://www.w3.org/2000/svg" width = "20" height        = "20" viewBox            = "0 0 24 24" fill = "none"
+                    stroke = "currentColor" stroke-width        = "2" stroke-linecap = "round" stroke-linejoin = "round"
+                    class  = "lucide lucide-arrow-right">
+              <path d      = "M5 12h14" />
+              <path d      = "m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href  = "https://drive.google.com/file/d/1h2YX2JCtLrDxwqEVXwbn3KRxG1OdceVk/view?usp=drivesdk"
+               class = "bg-accent-orange text-white py-2 px-6 rounded-full font-semibold hover:bg-opacity-80 transition duration-300 w-full sm:w-auto text-center glare-effect">
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "experience" class = "py-20 bg-secondary-dark" data-animation = "true">
+    <div     class = "container mx-auto px-4 max-w-7xl">
+    <p       class = "text-sm font-semibold text-text-muted uppercase tracking-widest">
+          PROFESSIONAL JOURNEY
+        </p>
+        <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-12">
+          Experience
+        </h2>
+        <div class = "grid md:grid-cols-2 gap-8">
+          <div
+                class = "p-8 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h3 class = "text-2xl font-semibold text-text-light mb-2">
+              KAV Biomedical Equipment Training & Center
+            </h3>
+            <p class = "text-accent-orange mb-4">Intern, Madurai</p>
+            <p class = "text-text-muted mb-4 leading-relaxed">
+              Gained hands-on expertise in advanced laparoscopy equipment,
+              including detailed training on its operation, maintenance, and
+              systematic troubleshooting.
+            </p>
+          </div>
+          <div
+                class = "p-8 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h3 class = "text-2xl font-semibold text-text-light mb-2">
+              Tenneco Automotive India Pvt. Ltd.
+            </h3>
+            <p class = "text-accent-orange mb-4">Intern, Hosur</p>
+            <p class = "text-text-muted mb-4 leading-relaxed">
+              Participated in cross-functional teams, contributing to key
+              projects in product development and quality assurance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "about" class          = "py-20 bg-primary-dark" data-animation = "true">
+    <div     class = "container mx-auto px-4 max-w-7xl">
+    <div     class = "md:flex md:space-x-16 items-center">
+    <div     class = "md:w-1/2 mb-8 md:mb-0">
+    <img     src   = "images\about.jpg" alt = "Soundar Rajan"
+             class = "w-[900px] h-[500px] object-cover rounded-xl shadow-lg border-2 border-dark-gray" />
+          </div>
+          <div class = "md:w-1/2">
+          <p   class = "text-sm font-semibold text-text-muted uppercase tracking-widest font-heading">
+              SOUNDAR RAJAN
+            </p>
+            <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-6">
+              About Me
+            </h2>
+            <p class = "text-text-muted mb-4 leading-relaxed">
+              I'm a biomedical engineer with a deep passion for healthcare
+              technology and innovation. My professional goal is to leverage
+              my technical knowledge and problem-solving skills in a dynamic
+              research or engineering setting to improve patient well-being.
+            </p>
+            <p class = "text-text-muted mb-4 leading-relaxed">
+              My core interests are in the design, development, and
+              maintenance of biomedical and diagnostic equipment. I am a
+              highly adaptable professional with strong communication,
+              problem-solving, and leadership skills, always eager to
+              collaborate with multidisciplinary teams.
+            </p>
+            <a href  = "#contact"
+               class = "btn-ghost-dark text-white py-3 px-6 rounded-full font-semibold hover:bg-gray-700 transition duration-300 flex items-center justify-center space-x-2 w-max mt-6 glare-effect border-2 border-dark-gray">
+              <span>Let's Collaborate</span>
+              <svg  xmlns  = "http://www.w3.org/2000/svg" width = "20" height        = "20" viewBox            = "0 0 24 24" fill = "none"
+                    stroke = "currentColor" stroke-width        = "2" stroke-linecap = "round" stroke-linejoin = "round"
+                    class  = "lucide lucide-arrow-right">
+              <path d      = "M5 12h14" />
+              <path d      = "m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "skills" class = "py-20 bg-secondary-dark" data-animation = "true">
+    <div     class = "container mx-auto px-4 max-w-7xl">
+    <p       class = "text-sm font-semibold text-text-muted uppercase tracking-widest">
+          WHAT I BRING
+        </p>
+        <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-12">
+          Skills
+        </h2>
+        <div class = "space-y-6">
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-xl font-semibold text-text-light">
+              Technical Skills
+            </h4>
+            <p class = "text-text-muted">
+              Python, C, and foundational Java programming, Microsoft Office Suite.
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-xl font-semibold text-text-light">Soft Skills</h4>
+            <p  class = "text-text-muted">
+              Adaptability, effective communication, collaborative
+              problem-solving, and leadership.
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-xl font-semibold text-text-light">Interests</h4>
+            <p  class = "text-text-muted">
+              Biomedical Equipment Design & Development, Diagnostic Equipment
+              Maintenance & Calibration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "education" class = "py-20 bg-primary-dark" data-animation = "true">
+    <div     class = "container mx-auto px-4 max-w-7xl">
+    <p       class = "text-sm font-semibold text-text-muted uppercase tracking-widest">
+          MY BACKGROUND
+        </p>
+        <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-12">
+          Education
+        </h2>
+        <div class = "grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange">
+            <h4 class = "text-lg font-semibold text-text-light mb-1">
+              Selvam College of Technology
+            </h4>
+            <p class = "text-sm text-text-muted mb-2">2022-2026</p>
+            <p class = "text-sm text-gray-300">
+              B.E. in Biomedical Engineering
+            </p>
+            <p class = "text-sm text-gray-500 mt-1">
+              8.22 CGPA (cumulative up to 6th semester)
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange">
+            <h4 class = "text-lg font-semibold text-text-light mb-1">
+              Government Higher Secondary School, Zuzuvadi
+            </h4>
+            <p class = "text-sm text-text-muted mb-2">2022</p>
+            <p class = "text-sm text-gray-300">HSC</p>
+            <p class = "text-sm text-gray-500 mt-1">70%</p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange">
+            <h4 class = "text-lg font-semibold text-text-light mb-1">
+              Government Higher Secondary School, Zuzuvadi
+            </h4>
+            <p class = "text-sm text-text-muted mb-2">2020</p>
+            <p class = "text-sm text-gray-300">SSLC</p>
+            <p class = "text-sm text-gray-500 mt-1">72%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "certifications" class = "py-20 bg-secondary-dark" data-animation = "true">
+    <div     class = "container mx-auto px-4 max-w-7xl">
+    <p       class = "text-sm font-semibold text-text-muted uppercase tracking-widest">
+          ACCOMPLISHMENTS
+        </p>
+        <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-12">
+          Certifications & Papers
+        </h2>
+        <div class = "grid md:grid-cols-3 gap-8">
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-lg font-semibold text-text-light mb-2">
+              E-Medical Records
+            </h4>
+            <p class = "text-sm text-text-muted">Awarded by Infosys</p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-lg font-semibold text-text-light mb-2">
+              Speech Competition
+            </h4>
+            <p class = "text-sm text-text-muted">
+              Awarded by Bureau of Indian Standards
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-lg font-semibold text-text-light mb-2">
+              Paper Presentation: 'Basic Radiology Treatment'
+            </h4>
+            <p class = "text-sm text-text-muted">
+              Presented at Selvam College of Technology
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-lg font-semibold text-text-light mb-2">
+              Paper Presentation: 'Tissue Engineering'
+            </h4>
+            <p class = "text-sm text-text-muted">
+              Presented at Sona College Of Technology
+            </p>
+          </div>
+          <div
+                class = "p-6 rounded-xl border border-white/10 shadow-lg shadow-white/5 transition-all duration-300 hover:shadow-2xl hover:border-accent-orange hover:scale-105">
+            <h4 class = "text-lg font-semibold text-text-light mb-2">
+              Embedded System
+            </h4>
+            <p class = "text-sm text-text-muted">
+              Certified by Indian Info Tech
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id    = "contact" class = "py-20 bg-primary-dark">
+    <div     class = "container mx-auto px-4 max-w-7xl md:grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class = "text-sm font-semibold text-text-muted uppercase tracking-widest font-heading">
+            CONTACT
+          </p>
+          <h2 class = "text-4xl md:text-5xl font-bold font-heading text-text-light mb-6">
+            Let's connect and innovate
+          </h2>
+          <p class = "text-text-muted mb-8 leading-relaxed">
+            I am available for new opportunities and collaborations. Feel free to connect with me on LinkedIn or send me
+            an email to discuss how my skills can contribute to your team's success.
+          </p>
+          <div class = "space-y-4">
+          <p   class = "text-lg text-text-light flex items-center gap-2">
+              <!-- Email Icon -->
+            <p   class = "text-lg text-text-light flex items-center gap-2 group cursor-pointer">
+            <svg class = "w-5 h-5 text-text-muted transition-colors duration-300 group-hover:text-accent-orange"
+                 fill  = "currentColor" viewBox = "0 0 24 24">
+                <path
+                  d = "M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+              <a href  = "mailto:gsoundar992@gmail.com"
+                 class = "text-text-muted transition-colors duration-300 group-hover:text-accent-orange">
+                gsoundar992@gmail.com
+              </a>
+            </p>
+
+            <!-- Phone -->
+            <p   class = "text-lg text-text-light flex items-center gap-2 group cursor-pointer">
+            <svg class = "w-5 h-5 text-text-muted transition-colors duration-300 group-hover:text-accent-orange"
+                 fill  = "currentColor" viewBox = "0 0 24 24">
+                <path
+                  d = "M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.26 2.67.76 3.88.1.27.05.59-.21 1.11l-2.2 2.2z" />
+              </svg>
+              <a href  = "tel:8098094353"
+                 class = "text-text-muted transition-colors duration-300 group-hover:text-accent-orange">
+                8098094353
+              </a>
+            </p>
+
+            <!-- LinkedIn -->
+            <p   class = "text-lg text-text-light flex items-center gap-2 group cursor-pointer">
+            <svg class = "w-5 h-5 text-text-muted transition-colors duration-300 group-hover:text-accent-orange"
+                 fill  = "currentColor" viewBox = "0 0 24 24">
+                <path
+                  d = "M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.75v2.16h.07c.66-1.25 2.27-2.56 4.68-2.56 5 0 5.92 3.3 5.92 7.58V24h-5V15.06c0-2.1-.04-4.81-2.93-4.81-2.93 0-3.38 2.29-3.38 4.65V24h-5V8z" />
+              </svg>
+              <a href  = "https://www.linkedin.com/in/soundar-rajan-g-98a2b22a5" target = "_blank"
+                 class = "text-text-muted transition-colors duration-300 group-hover:text-accent-orange">
+                LinkedIn
+              </a>
+            </p>
+            <!-- Instagram Icon -->
+            <p   class = "text-lg text-text-light flex items-center gap-2 group cursor-pointer">
+            <svg class = "w-5 h-5 text-text-muted transition-colors duration-300 group-hover:text-accent-orange"
+                 fill  = "currentColor" viewBox = "0 0 24 24">
+                <path
+                  d = "M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+              </svg>
+              <a href  = "https://www.instagram.com/itz_starkxx___?igsh=Y2ppaWJjaWJ1NHI1" target = "_blank"
+                 class = "text-text-muted transition-colors duration-300 group-hover:text-accent-orange">
+                @itz_starkxx
+              </a>
+            </p>
+
+          </div>
+        </div>
+        <!-- Form using FormSubmit -->
+        <form  action = "https://formsubmit.co/gsoundar992@gmail.com" method = "POST"
+               class  = "bg-dark-gray p-8 rounded-xl border border-white/20 shadow-lg shadow-white/5 space-y-4 ">
+        <input type   = "hidden" name                                        = "_captcha" value = "false">
+
+          <div>
+            <label for   = "name" class = "block text-text-muted text-sm font-semibold mb-2">Name</label>
+            <input type  = "text" id    = "name" name = "name"
+                   class = "w-full p-3 bg-gray-900 rounded-lg text-white border border-gray-700 focus:outline-none focus:ring-1 focus:ring-accent-orange transition duration-200"
+              required>
+          </div>
+
+          <div>
+            <label for   = "email" class = "block text-text-muted text-sm font-semibold mb-2">Email</label>
+            <input type  = "email" id    = "email" name = "email"
+                   class = "w-full p-3 bg-gray-900 rounded-lg text-white border border-gray-700 focus:outline-none focus:ring-1 focus:ring-accent-orange transition duration-200"
+              required>
+          </div>
+
+          <div>
+            <label    for   = "message" class = "block text-text-muted text-sm font-semibold mb-2">Message</label>
+            <textarea id    = "message" name  = "message" rows = "4"
+                      class = "w-full p-3 bg-gray-900 rounded-lg text-white border border-gray-700 focus:outline-none focus:ring-1 focus:ring-accent-orange transition duration-200"
+              required></textarea>
+          </div>
+
+          <button type  = "submit"
+                  class = "w-full bg-accent-orange text-white py-3 rounded-full font-semibold hover:bg-opacity-80 transition duration-300 shadow-lg glare-effect">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class = "py-12 bg-secondary-dark text-text-muted border-t border-gray-800">
+    <div    class = "container mx-auto px-4 max-w-7xl flex flex-col items-center space-y-4">
+
+        <!-- First line: centered text -->
+        <p class = "text-sm text-center">&copy; 2025 Gowtham. All rights reserved.</p>
+
+        <!-- Second line: social icons centered -->
+        <div class = "flex space-x-4">
+          <!-- GitHub -->
+          <a    href      = "https://github.com/gsoundar992-png" target = "_blank"
+                class     = "w-12 h-12 flex items-center justify-center bg-black border border-black rounded-full hover:bg-white hover:text-black transition-all duration-300">
+          <svg  class     = "w-6 h-6" fill                              = "currentColor" viewBox = "0 0 24 24">
+          <path fill-rule = "evenodd" clip-rule                         = "evenodd"
+                d         = "M12 0C5.37 0 0 5.37 0 12c0 5.31 3.438 9.799 8.205 11.387.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.608-4.042-1.608-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.303-5.467-1.333-5.467-5.931 0-1.31.469-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.288-1.552 3.294-1.23 3.294-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.807 5.625-5.479 5.921.429.369.812 1.096.812 2.209 0 1.594-.015 2.879-.015 3.271 0 .319.216.694.825.576C20.565 21.796 24 17.308 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            <!-- Instagram -->
+          </a>
+          <a   href  = "https://instagram.com" target = "_blank"
+               class = "w-12 h-12 flex items-center justify-center bg-black border border-black rounded-full hover:bg-white hover:text-black transition-all duration-300">
+          <svg class = "w-6 h-6" fill                 = "currentColor" viewBox = "0 0 24 24">
+              <path
+                d = "M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+            </svg>
+          </a>
+
+
+          <!-- LinkedIn -->
+          <a   href  = "https://www.linkedin.com/in/soundar-rajan-g-98a2b22a5" target = "_blank"
+               class = "w-12 h-12 flex items-center justify-center bg-black border border-black rounded-full hover:bg-white hover:text-black transition-all duration-300">
+          <svg class = "w-6 h-6" fill                                                 = "currentColor" viewBox = "0 0 24 24">
+              <path
+                d = "M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7.5 0h4.75v2.16h.07c.66-1.25 2.27-2.56 4.68-2.56 5 0 5.92 3.3 5.92 7.58V24h-5V15.06c0-2.1-.04-4.81-2.93-4.81-2.93 0-3.38 2.29-3.38 4.65V24h-5V8z" />
+            </svg>
+          </a>
+
+          <!-- X / Twitter -->
+          <a   href  = "https://x.com/GSoundarRajanG1?t=owoPUXmvbqm0Gxx87fxQ3g&s=09" target = "_blank"
+               class = "w-12 h-12 flex items-center justify-center bg-black border border-black rounded-full hover:bg-white hover:text-black transition-all duration-300">
+          <svg class = "w-6 h-6" fill                                                       = "currentColor" viewBox = "0 0 24 24">
+              <path
+                d = "M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.423.725-.666 1.562-.666 2.457 0 1.694.861 3.188 2.172 4.066-.799-.025-1.551-.245-2.21-.611v.061c0 2.367 1.684 4.342 3.918 4.786-.41.111-.844.171-1.292.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.417-1.68 1.318-3.809 2.104-6.102 2.104-.396 0-.788-.023-1.175-.069 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14-7.496 14-13.986 0-.21-.005-.423-.014-.634.962-.689 1.797-1.56 2.457-2.548l-.047-.02z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src = "/js/script.js"></script>
+</body>
+
+</html>
